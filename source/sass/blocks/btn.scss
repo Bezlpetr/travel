@@ -1,26 +1,41 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 
+  line-height: 16px;
+  font-weight: 500;
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: $color-navy-blue;
+  border: 1px solid $color-transparent;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  // transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
+  // &--red {
+  //   background-color: $color-torch-red;
+  // }
 
   &:disabled {
-    opacity: 0.5;
-
+    background-color: $color-nobel;
+    border: 1px solid $color-transparent;
     pointer-events: none;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    color: $color-resolution-blue;
+
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-default-white;
+
+    background-color: $color-resolution-blue;
+    border: 1px solid $color-transparent;
   }
 }
