@@ -1,0 +1,237 @@
+.tours__container {
+  position: relative;
+
+  padding-top: 123px;
+  padding-bottom: 100px;
+
+  @include vp-1199 {
+    padding-top: 68px;
+    padding-bottom: 45px;
+  }
+
+  @include vp-767 {
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+}
+
+.tours__title {
+  position: relative;
+
+  margin: 0;
+
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+  }
+
+  &::before {
+    position: absolute;
+    content: "Ближайшие туры";
+    bottom: -3px;
+    left: 0;
+
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    vertical-align: bottom;
+
+    opacity: 0.03;
+
+    @include vp-767 {
+      white-space: nowrap;
+    }
+  }
+}
+
+.tours__slider {
+  position: static;
+}
+
+.tours__slider-list {
+  position: static;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+  margin-bottom: 55px;
+
+  list-style: none;
+
+  @include vp-1199 {
+    margin-top: 22px;
+    margin-bottom: 26px;
+  }
+}
+
+.tours__slider-button {
+  position: absolute;
+  top: 120px;
+
+  z-index: 10;
+
+  width: 37px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+
+  color: $color-default-white;
+
+  background-color: $color-navy-blue;
+  border: 1px solid $color-transparent;
+
+  @include vp-1199 {
+    top: 65px;
+  }
+
+  @include vp-767 {
+    top: 40px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-default-white;
+
+    background-color: $color-resolution-blue;
+    border: 1px solid$color-transparent;
+  }
+}
+
+.tours__slider-button.swiper-button-disabled {
+  background-color: $color-nobel;
+}
+
+.tours__slider-button--prev {
+  left: auto;
+  right: 161px;
+
+  @include vp-1199 {
+    right: 86px;
+  }
+
+  @include vp-767 {
+    right: 56px;
+  }
+}
+
+.tours__slider-button--next {
+  right: 120px;
+
+  @include vp-1199 {
+    right: 45px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+  }
+}
+
+.tours__slider-button--next svg {
+  transform: rotate(180deg);
+}
+
+.tours__slider-button.swiper-button-lock {
+  display: block;
+}
+
+.tours__button-wrapper {
+  text-align: center;
+}
+
+.tours__button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 10px;
+
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+
+  user-select: none;
+  cursor: pointer;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.56px;
+  }
+
+  &:not(.tours__button--disabled) {
+    @include hover-focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    @include active {
+      color: $color-navy-blue;
+    }
+  }
+}
+
+.tours__button--disabled {
+  color: $color-navy-blue;
+
+  outline: none;
+  pointer-events: none;
+}
+
+.tours__button--disabled svg {
+  stroke-opacity: 0.1;
+}
+
+.tours__background-image-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  width: 602px;
+  height: 1630px;
+
+  @include vp-1199 {
+    height: 1364px;
+  }
+
+  @include vp-767 {
+    width: 171px;
+    height: 595px;
+
+    top: 110px;
+    right: 0;
+  }
+}
+
+.tours__background-image-wrapper img {
+  width: 602px;
+  height: 1630px;
+
+  object-fit: cover;
+
+  @include vp-1199 {
+    height: 1364px;
+  }
+
+  @include vp-767 {
+    width: 171px;
+    height: 595px;
+
+    object-fit: cover;
+  }
+}

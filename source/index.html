@@ -30,7 +30,7 @@
             <!-- Для отключения пункта меню установи класс header__navigation-link--disabled  -->
             <ul class="header__navigation-list" >
               <li class="header__navigation-item">
-                <a class="header__navigation-link" href="#" data-navigation-button>Туры</a>
+                <a class="header__navigation-link" href="#tours" data-navigation-button>Туры</a>
               </li>
               <li class="header__navigation-item">
                 <a class="header__navigation-link" href="#" data-navigation-button>Обучение</a>
@@ -57,7 +57,8 @@
       </header>
       <main>
         <h1 class="visually-hidden">Туристическая компания Lifetour.</h1>
-        <section class="hero">
+        <section class="hero" data-test="hero">
+          <h2 class="visually-hidden">Рекламная информация о турах Lifetour.</h2>
           <div class="hero__slider swiper" data-hero-slider>
             <ol class="hero__slider-list swiper-wrapper">
               <li class="hero__slider-item swiper-slide">
@@ -233,22 +234,258 @@
                 </div>
               </li>
             </ol>
-            <!-- <div class="header__hero-slider-bullets-wrapper swiper-pagination" data-hero-pagination> -->
-              <!-- сюда будут добавлены буллеты для переключения слайдов -->
-            <!-- </div> -->
           </div>
-                <!-- </div> -->
         </section>
-        <!-- <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success" >modal--success link</a></p>
-            <button class="btn" type="button" disabled>тест</button>
+        <section class="tours" id="tours" data-test="tours">
+          <div class="container tours__container">
+            <h2 class="tours__title">Ближайшие туры</h2>
+            <div class="tours__slider swiper" data-tours-slider>
+              <ol class="tours__slider-list swiper-wrapper">
+                <li class="tours__slider-item tour swiper-slide">
+                  <h3 class="tour__title">Через Фишт <br> к Чёрному морю и обратно</h3>
+                  <div class="tour__image-wrapper">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/tours-fisht.webp 1x, ./img/tours-fisht@2x.webp 2x">
+                        <img src="./img/tours-fisht.jpg" srcset="./img/tours-fisht@2x.jpg 2x" width="380" height="416" alt="Изображение горы Фишт на Кавказе.">
+                    </picture>
+                  </div>
+                  <div class="tour__info-wrapper">
+                    <span class="tour__info-place">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-pin-filled"></use>
+                      </svg>
+                      Адыгея
+                    </span>
+                    <span class="tour__info-days">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      7 дней
+                    </span>
+                    <span class="tour__info-nights">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>
+                      6 ночей
+                    </span>
+                  </div>
+                  <dl class="tour__details-list">
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Сложность:</dt>
+                      <dd class="tour__details-description">
+                        <div class="tour__details-difficalty-wrapper">
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star"></span>
+                        </div>
+                      </dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Даты набора:</dt>
+                      <dd class="tour__details-description">15.07–19.07</dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Группа:</dt>
+                      <dd class="tour__details-description">до 22 чел.</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="tours__slider-item tour swiper-slide">
+                  <h3 class="tour__title">Путешествие вокруг Эльбруса</h3>
+                  <div class="tour__image-wrapper">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/tours-elbrus.webp 1x, ./img/tours-elbrus@2x.webp 2x">
+                        <img src="./img/tours-elbrus.jpg" srcset="./img/tours-elbrus@2x.jpg 2x" width="458" height="416" alt="Изображение Эльбруса.">
+                    </picture>
+                  </div>
+                  <div class="tour__info-wrapper">
+                    <span class="tour__info-place">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-pin-filled"></use>
+                      </svg>
+                      Кавказ
+                    </span>
+                    <span class="tour__info-days">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      4 дня
+                    </span>
+                    <span class="tour__info-nights">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>
+                      3 ночи
+                    </span>
+                  </div>
+                  <dl class="tour__details-list">
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Сложность:</dt>
+                      <dd class="tour__details-description">
+                        <div class="tour__details-difficalty-wrapper">
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star"></span>
+                        </div>
+                      </dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Даты набора:</dt>
+                      <dd class="tour__details-description">12.06–19.06</dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Группа:</dt>
+                      <dd class="tour__details-description">до 15 чел.</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="tours__slider-item tour swiper-slide">
+                  <h3 class="tour__title">Путь к подножию Белухи</h3>
+                  <div class="tour__image-wrapper">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/tours-belukha.webp 1x, ./img/tours-belukha@2x.webp 2x">
+                        <img src="./img/tours-belukha.jpg" srcset="./img/tours-belukha@2x.jpg 2x" width="458" height="416" alt="Изображение горы Белуха на Алтае.">
+                    </picture>
+                  </div>
+                  <div class="tour__info-wrapper">
+                    <span class="tour__info-place">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-pin-filled"></use>
+                      </svg>
+                      Алтай
+                    </span>
+                    <span class="tour__info-days">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      14 дней
+                    </span>
+                    <span class="tour__info-nights">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>13 ночей
+                    </span>
+                  </div>
+                  <dl class="tour__details-list">
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Сложность:</dt>
+                      <dd class="tour__details-description">
+                        <div class="tour__details-difficalty-wrapper">
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star"></span>
+                          <span class="tour__details-difficulty-star"></span>
+                        </div>
+                      </dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Даты набора:</dt>
+                      <dd class="tour__details-description">14.06–23.06</dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Группа:</dt>
+                      <dd class="tour__details-description">до 25 чел.</dd>
+                    </div>
+                  </dl>
+                </li>
+                <li class="tours__slider-item tour swiper-slide">
+                  <h3 class="tour__title">Через Фишт <br> к Чёрному морю и обратно</h3>
+                  <div class="tour__image-wrapper">
+                    <picture>
+                      <source type="image/webp"
+                        srcset="./img/tours-fisht.webp 1x, ./img/tours-fisht@2x.webp 2x">
+                        <img src="./img/tours-fisht.jpg" srcset="./img/tours-fisht@2x.jpg 2x" width="380" height="416" alt="Изображение горы Фишт на Кавказе.">
+                    </picture>
+                  </div>
+                  <div class="tour__info-wrapper">
+                    <span class="tour__info-place">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-pin-filled"></use>
+                      </svg>
+                      Адыгея
+                    </span>
+                    <span class="tour__info-days">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-sun"></use>
+                      </svg>
+                      7 дней
+                    </span>
+                    <span class="tour__info-nights">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>
+                      6 ночей
+                    </span>
+                  </div>
+                  <dl class="tour__details-list">
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Сложность:</dt>
+                      <dd class="tour__details-description">
+                        <div class="tour__details-difficalty-wrapper">
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star tour__details-difficulty-star--active"></span>
+                          <span class="tour__details-difficulty-star"></span>
+                        </div>
+                      </dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Даты набора:</dt>
+                      <dd class="tour__details-description">15.07–19.07</dd>
+                    </div>
+                    <div class="tour__details-item-wrapper">
+                      <dt class="tour__details-item">Группа:</dt>
+                      <dd class="tour__details-description">до 22 чел.</dd>
+                    </div>
+                  </dl>
+                </li>
+              </ol>
+              <button class="tours__slider-button tours__slider-button--prev swiper-button-prev" type="button" data-tours-slider-button-prev aria-label="Показать информацию о предыдущем туре.">
+                <svg width="14" height="9">
+                  <use href="./img/sprite.svg#icon-arrow-tours-slider"></use>
+                </svg>
+              </button>
+              <button class="tours__slider-button tours__slider-button--next swiper-button-next" type="button" data-tours-slider-button-next aria-label="Показать информацию о следующем туре." >
+                <svg width="14" height="9">
+                  <use href="./img/sprite.svg#icon-arrow-tours-slider"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- Для отключения кнопки установи класс tours__button--disabled  -->
+            <div class="tours__button-wrapper">
+              <a class="tours__button" href="#">
+                Показать все туры
+                <svg width="9" height="14">
+                  <use href="./img/sprite.svg#icon-arrow-alltours"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="tours__background-image-wrapper">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="./img/clouds-tours-mobile.webp 1x, ./img/clouds-tours-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)"
+                  srcset="./img/clouds-tours-tablet.webp 1x, ./img/clouds-tours-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/clouds-tours-desktop.webp 1x, ./img/clouds-tours-desktop.webp 2x">
+                <source type="image/png" media="(max-width: 767px)"
+                  srcset="./img/clouds-tours-mobile.png 1x, ./img/clouds-tours-mobile@2x.png 2x">
+                <source type="image/png" media="(max-width: 1199px)"
+                  srcset="./img/clouds-tours-tablet.png 1x, ./img/clouds-tours-tablet@2x.png 2x">
+                <img src="./img/clouds-tours-desktop.png" srcset="./img/clouds-tours-desktop@2x.png 2x" width="602" height="1630" alt="">
+              </picture>
+            </div>
           </div>
-        </section> -->
+        </section>
       </main>
       <footer class="footer">
         <div class="container"></div>

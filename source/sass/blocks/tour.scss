@@ -1,0 +1,160 @@
+.tour {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  row-gap: 15px;
+  padding: 30px 20px;
+  min-height: 416px;
+
+  color: $color-default-white;
+  background-color: $color-nandor;
+}
+
+.tour__title {
+  order: 2;
+
+  width: 240px;
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.tour__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+}
+
+.tour__image-wrapper img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.tour__info-wrapper {
+  order: 1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour__info-place {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+  padding: 6px 12px;
+  margin-right: auto;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+
+  background-color: $color-navy-blue;
+}
+
+.tour__info-place svg {
+  width: 16px;
+  height: 16px;
+}
+
+.tour__info-days {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+  margin-right: 14px;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour__info-days svg {
+  width: 20px;
+  height: 20px;
+}
+
+.tour__info-nights {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.tour__info-nights svg {
+  width: 20px;
+  height: 20px;
+}
+
+.tour__details-list {
+  position: relative;
+
+  order: 3;
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  margin: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+
+    width: 80px;
+    height: 1px;
+
+    background-color: $color-white-opacity20;
+  }
+}
+
+.tour__details-item {
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.tour__details-description {
+  margin: 0;
+
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.tour__details-difficalty-wrapper {
+  display: flex;
+  margin-top: -3px;
+}
+
+.tour__details-difficulty-star {
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  background-image: url('../img/svg/icon-star.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--active {
+    background-image: url('../img/svg/icon-star-active.svg');
+  }
+
+  &:not(:last-child) {
+    margin-right: 1px;
+  }
+}
