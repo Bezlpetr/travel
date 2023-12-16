@@ -108,12 +108,13 @@
     color: $color-default-white;
 
     background-color: $color-resolution-blue;
-    border: 1px solid$color-transparent;
+    border: 1px solid $color-transparent;
   }
 }
 
 .tours__slider-button.swiper-button-disabled {
   background-color: $color-nobel;
+  opacity: 1;
 }
 
 .tours__slider-button--prev {

@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initHeroSlider} from './modules/sliders/hero-slider';
 import {initToursSlider} from './modules/sliders/tours-slider';
+import {initTrainingSlider} from './modules/sliders/training-slider';
 import {setVideoPlayButtonListener} from './modules/video/caucasus-video';
 import {initMenu, setNavigationToggleListener} from './modules/menu/menu';
 
@@ -28,6 +29,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     initHeroSlider();
     initToursSlider();
+    initTrainingSlider();
     setVideoPlayButtonListener();
   });
 });

@@ -1,8 +1,9 @@
+import Swiper from '../../vendor/swiper';
+
 const initHeroSlider = () => {
   const mainSliderElement = document.querySelector('[data-hero-slider]');
-  // const paginationSliderElement = document.querySelector('[data-hero-pagination]');
 
-  return new window.Swiper(mainSliderElement, {
+  const swiperHero = new Swiper(mainSliderElement, {
     // Optional parameters
     loop: true,
 
@@ -28,6 +29,7 @@ const initHeroSlider = () => {
       },
     },
   });
+  return swiperHero;
 };
 
 export {initHeroSlider};

@@ -11,10 +11,13 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-elephant:                    #2d383f;
+
+$color-elephant-opacity30:          rgba(45, 56, 63, 0.30);
 $color-elephant-opacity60:          rgba(45, 56, 63, 0.60);
 $color-navy-blue:                   #0266c1;
+$color-navy-blue-opacity10:         rgba(2, 102, 193, 0.10);
+$color-navy-blue-opacity20:         rgba(2, 102, 193, 0.20);
 $color-resolution-blue:             #1c3374;
-$color-resolution-blue-opacity10:   rgba(2, 102, 193, 0.1);
 $color-nobel:                       #999999;
 $color-gainsboro:                   #d9d9d9;
 $color-bermuda-grey:                #6c89ab;
