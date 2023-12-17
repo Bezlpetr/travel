@@ -1,0 +1,166 @@
+.about__container {
+  position: relative;
+
+  padding-top: 23px;
+  padding-left: 735px;
+  margin-bottom: 30px;
+
+  @include vp-1199 {
+    padding-top: 9px;
+    padding-left: 453px;
+    margin-bottom: 37px;
+  }
+
+  @include vp-767 {
+    padding-top: 408px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.about__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 56px;
+
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  @include vp-1199 {
+    margin-left: 6px;
+    margin-bottom: 35px;
+
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    margin-left: 0;
+    margin-bottom: 25px;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "О нас";
+    bottom: -3px;
+    left: 0;
+
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    vertical-align: bottom;
+
+    opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.about__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 808px;
+  height: 474px;
+
+  @include vp-1199 {
+    top: 51px;
+
+    width: 542px;
+    height: 350px;
+  }
+
+  @include vp-767 {
+    top: 0px;
+    left: 0px;
+
+    width: 350px;
+    height: 400px;
+  }
+}
+
+.about__image-wrapper img {
+  width: 808px;
+  height: 474px;
+
+  object-fit: cover;
+
+  @include vp-1199 {
+    width: 542px;
+    height: 350px;
+  }
+
+  @include vp-767 {
+    width: 350px;
+    height: 400px;
+  }
+}
+
+.about__text-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+
+  @include vp-767 {
+    row-gap: 27px;
+  }
+}
+
+.about__section-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  @include vp-1199 {
+    row-gap: 11px;
+  }
+
+  @include vp-767 {
+    row-gap: 13px;
+  }
+}
+
+.about__section-wrapper h3 {
+  margin: 0;
+
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.about__section-wrapper p{
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+
+  @include vp-767 {
+    line-height: 20px;
+  }
+}
