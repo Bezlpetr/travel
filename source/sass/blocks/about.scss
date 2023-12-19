@@ -1,20 +1,23 @@
 .about__container {
   position: relative;
 
+  min-height: 480px;
   padding-top: 23px;
   padding-left: 735px;
-  margin-bottom: 30px;
+  margin-bottom: 47px;
 
   @include vp-1199 {
     padding-top: 9px;
     padding-left: 453px;
-    margin-bottom: 37px;
+    margin-bottom: 57px;
   }
 
   @include vp-767 {
     padding-top: 408px;
     padding-left: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 41px;
+
+    overflow-x: clip;
   }
 }
 

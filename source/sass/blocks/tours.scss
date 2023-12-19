@@ -12,6 +12,8 @@
   @include vp-767 {
     padding-top: 55px;
     padding-bottom: 20px;
+
+    overflow-x: clip;
   }
 }
 
@@ -43,10 +45,7 @@
     opacity: 0.03;
 
     @include vp-767 {
-      width: calc(100% + 15px);
       white-space: nowrap;
-      text-overflow: clip;
-      overflow: hidden;
     }
   }
 }
