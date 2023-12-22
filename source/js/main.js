@@ -5,6 +5,7 @@ import {initHeroSlider} from './modules/sliders/hero-slider';
 import {initToursSlider} from './modules/sliders/tours-slider';
 import {initTrainingSlider} from './modules/sliders/training-slider';
 import {initReviewsSlider} from './modules/sliders/reviews-slider';
+import {initAdvantagesSlider} from './modules/sliders/advantages-slider';
 import {setVideoPlayButtonListener} from './modules/video/caucasus-video';
 import {initMenu, setNavigationToggleListener} from './modules/menu/menu';
 
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initToursSlider();
     initTrainingSlider();
     initReviewsSlider();
+    initAdvantagesSlider();
     setVideoPlayButtonListener();
   });
 });

@@ -34,7 +34,7 @@ const initReviewsSlider = () => {
       // when window width is >= 0px
       0: {
         slidesPerView: 1,
-        spaceBetween: 0,
+        spaceBetween: 20,
         allowTouchMove: true,
         initialSlide: 1,
       },
