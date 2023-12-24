@@ -1,0 +1,280 @@
+.gallery__container {
+  position: relative;
+
+  padding: 0;
+  padding-top: 23px;
+
+  @include vp-1199 {
+    padding-top: 16px;
+  }
+
+  @include vp-767 {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+  }
+}
+
+.gallery__title {
+  position: relative;
+
+  margin: 0 120px;
+  margin-bottom: 24px;
+
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+
+  @include vp-1199 {
+    margin: 0 45px;
+    margin-bottom: 17px;
+
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "Фотогалерея";
+    bottom: -3px;
+    left: 0;
+
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    vertical-align: bottom;
+
+    opacity: 0.03;
+
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include vp-767 {
+      bottom: 0;
+
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+}
+
+.gallery__text-content-wrapper {
+  width: 693px;
+  margin: 0 120px;
+  margin-bottom: 46px;
+
+  @include vp-1199 {
+    width: 420px;
+    margin: 0 45px;
+    margin-bottom: 21px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    margin: 0;
+    margin-bottom: 65px;
+  }
+}
+
+.gallery__text-content-wrapper p {
+  margin: 0;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @include vp-767 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.gallery__slider {
+  position: static;
+}
+
+.gallery__slider-list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.gallery__slider-item {
+  width: auto;
+}
+
+.gallery__slider-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  height: 450px;
+
+  @include vp-1199 {
+    width: 253px;
+  }
+
+  @include vp-767 {
+    row-gap: 3px;
+    width: 158px;
+    height: 260px;
+  }
+}
+
+.gallery__slider-image-wrapper img {
+  object-fit: cover;
+}
+
+.gallery__slider-item--odd img {
+  width: 276px;
+
+  @include vp-1199 {
+    width: 100%;
+    height: 450px;
+  }
+
+  @include vp-767 {
+    height: 260px;
+  }
+}
+
+.gallery__slider-item--even img {
+  width: 298px;
+}
+
+
+.gallery__slider-item--center img {
+  width: 272px;
+
+  @include vp-1199 {
+    width: 100%;
+    height: 450px;
+  }
+
+  @include vp-767 {
+    height: 260px;
+  }
+}
+
+.gallery__slider-first-row-image-wrapper img {
+  height: 180px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    height: 100px;
+  }
+}
+
+.gallery__slider-second-row-image-wrapper img {
+  height: 265px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    height: 157px;
+  }
+}
+
+
+.gallery__slider-button {
+  position: absolute;
+  top: 88px;
+
+  z-index: 10;
+
+  width: 37px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+
+  color: $color-default-white;
+
+  background-color: $color-navy-blue;
+  border: 1px solid $color-transparent;
+
+  @include vp-1199 {
+    top: 89px;
+
+    width: 33px;
+  }
+
+  @include vp-767 {
+    top: 123px;
+
+    width: 37px;
+  }
+
+  &::after {
+    display: none;
+  }
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+
+    background-color: $color-default-white;
+    border: 1px solid $color-resolution-blue;
+    outline: none;
+  }
+
+  @include active {
+    color: $color-default-white;
+
+    background-color: $color-resolution-blue;
+    border: 1px solid $color-transparent;
+  }
+}
+
+.gallery__slider-button.swiper-button-disabled {
+  background-color: $color-nobel;
+  opacity: 1;
+}
+
+.gallery__slider-button--prev {
+  left: auto;
+  right: 161px;
+
+  @include vp-1199 {
+    right: 83px;
+  }
+
+  @include vp-767 {
+    right: 57px;
+  }
+}
+
+.gallery__slider-button--next {
+  right: 120px;
+
+  @include vp-1199 {
+    right: 45px;
+  }
+
+  @include vp-767 {
+    right: 15px;
+  }
+}
+
+.gallery__slider-button--next svg {
+  transform: rotate(180deg);
+}
+
+.gallery__slider-button.swiper-button-lock {
+  display: block;
+}

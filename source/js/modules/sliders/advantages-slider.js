@@ -4,8 +4,8 @@ import Swiper from '../../vendor/swiper';
 let desktop = window.matchMedia('(min-width: 1200px)');
 
 const initAdvantagesSlider = () => {
-  let swiperAdvantages = null;
-  if (desktop.matches) {
+  let swiperAdvantages;
+  if (desktop.matches && !swiperAdvantages) {
     const mainSliderElement = document.querySelector('[data-advantages-slider]');
     const prevButton = document.querySelector('[data-advantages-slider-button-prev]');
     const nextButton = document.querySelector('[data-advantages-slider-button-next]');
@@ -25,7 +25,9 @@ const initAdvantagesSlider = () => {
     });
   } else {
   // если слайдер не в брейкпоинте, то уничтожаем его
-    swiperAdvantages.destroy();
+    if (swiperAdvantages) {
+      swiperAdvantages.destroy();
+    }
   }
   return swiperAdvantages;
 };
