@@ -18,7 +18,7 @@ const initAdvantagesSlider = () => {
         nextEl: nextButton,
         prevEl: prevButton,
       },
-      slidesPerView: 3.58,
+      slidesPerView: 'auto',
       spaceBetween: 30,
       initialSlide: 2,
       centeredSlides: 'true',

@@ -89,8 +89,18 @@
 }
 
 .reviews__slider-item {
+  width: 700px;
+
   background-color: $color-default-white;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.10);
+
+  @include vp-1199 {
+    width: 565px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .reviews__slider-button {

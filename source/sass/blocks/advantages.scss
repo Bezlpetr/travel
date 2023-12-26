@@ -64,7 +64,7 @@
   align-items: stretch;
   margin: 0;
   padding-left: 0;
-  padding-top: 45px;
+  padding-top: 46px;
   padding-bottom: 50px;
 
   list-style: none;
@@ -87,9 +87,18 @@
 }
 
 .advantages__slider .advantages__slider-item {
+  width: 380px;
   height: 100%;
 
   background-color: $color-default-white;
+
+  @include vp-1199 {
+    width: 324px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .advantages__slider-item:last-child {

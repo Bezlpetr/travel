@@ -9,6 +9,7 @@ const initReviewsSlider = () => {
     // Optional parameters
     loop: true,
     autoHeight: true,
+    slidesPerView: 'auto',
 
     // Navigation arrows
     navigation: {
@@ -19,22 +20,22 @@ const initReviewsSlider = () => {
     breakpoints: {
       // when window width is >= 1200px
       1200: {
-        slidesPerView: 1.61,
+        // slidesPerView: 1.61,
         spaceBetween: 120,
         allowTouchMove: false,
         initialSlide: 1,
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 1.19,
+        // slidesPerView: 1.19,
         spaceBetween: 30,
         allowTouchMove: true,
         initialSlide: 1,
       },
       // when window width is >= 0px
       0: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+        // slidesPerView: 1,
+        spaceBetween: 15,
         allowTouchMove: true,
         initialSlide: 1,
       },

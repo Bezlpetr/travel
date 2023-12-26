@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
-  padding: 40px 20px;
+  padding: 39px 19px;
   height: 100%;
   box-sizing: border-box;
 
@@ -86,10 +86,18 @@
   }
 }
 
-.advantage__text-content-wrapper br {
+.advantage__text-content-wrapper h3 > br {
   display: none;
 
   @include vp-1199 {
+    display: inline;
+  }
+}
+
+.advantage__text-content-wrapper p > br {
+  display: none;
+
+  @include vp-767 {
     display: inline;
   }
 }
