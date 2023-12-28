@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Широкий выбор туристических туров &#9978; от Lifetour по удивительным местам России для новичков и профи. У нас есть все для организации вашего незабываемого приключения - &#128170; опытные гиды &#128076; все необходимое оборудование &#128400; гарантия полной безопасности &#129309; индивдуальный подход. Отдых в гармонии с природой.">
     <title>Туристические туры на Кавказ, Камчатку, Алтай и другие удивительные места России от Lifetour</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
@@ -17,14 +17,16 @@
   </head>
   <body>
     <div class="wrapper" data-main-wrapper>
-      <!-- дляя закрытия меню добавь класс header--navigation-closed, для открытия меню добавь класс header--navigation-opened  -->
-      <header class="header header--navigation-opened header--nojs" data-header>
-        <div class="container header__wrapper">
-          <div class="header__logo-wrapper">
+      <!-- для закрытия меню добавь класс header--navigation-closed, для открытия меню добавь класс header--navigation-opened  -->
+      <header class="header header--navigation-opened header--nojs" data-header data-test="hero">
+        <h1 class="visually-hidden">Туристическая компания Lifetour.</h1>
+        <div class="container header__navigation-wrapper">
+          <a class="header__logo-link">
             <svg width="142" height="42">
               <use href="./img/sprite.svg#icon-logo"></use>
             </svg>
-          </div>
+            <span class="visually-hidden">Логотип туристической компании Lifetour.</span>
+          </a>
           <button class="header__navigation-toggle" type="button" aria-label="Открыть меню." data-navigation-toggle></button>
           <nav class="header__navigation" >
             <!-- Для отключения пункта меню установи класс header__navigation-link--disabled  -->
@@ -33,19 +35,19 @@
                 <a class="header__navigation-link" href="#tours" data-navigation-button>Туры</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link" href="#" data-navigation-button>Обучение</a>
+                <a class="header__navigation-link" href="#training" data-navigation-button>Обучение</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link" href="#" data-navigation-button>О нас</a>
+                <a class="header__navigation-link" href="#about" data-navigation-button>О нас</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link" href="#" data-navigation-button>Отзывы</a>
+                <a class="header__navigation-link" href="#reviews" data-navigation-button>Отзывы</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link" href="#" data-navigation-button>Фотографии</a>
+                <a class="header__navigation-link" href="#gallery" data-navigation-button>Фотографии</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link" href="#" data-navigation-button>Контакты</a>
+                <a class="header__navigation-link" href="#contacts" data-navigation-button>Контакты</a>
               </li>
             </ul>
           </nav>
@@ -55,187 +57,186 @@
           </address>
         </div>
       </header>
-      <main>
-        <h1 class="visually-hidden">Туристическая компания Lifetour.</h1>
-        <section class="hero" data-test="hero">
-          <h2 class="visually-hidden">Рекламная информация о турах Lifetour.</h2>
-          <div class="hero__slider swiper" data-hero-slider>
-            <ol class="hero__slider-list swiper-wrapper">
-              <li class="hero__slider-item swiper-slide">
-                <div class="container hero__slide-container">
-                  <div class="hero__slide-image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
-                      <source type="image/webp"
-                        srcset="./img/caucasus-desktop.webp 1x, ./img/caucasus-desktop@2x.webp 2x">
-                      <source type="image/jpeg" media="(max-width: 767px)"
-                        srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)"
-                        srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
-                      <img src="./img/caucasus-desktop.jpg" srcset="./img/caucasus-desktop@2x.jpg 2x" width="1440" height="800" alt="">
-                    </picture>
-                  </div>
-                  <div class="hero__slide-content-wrapper">
-                    <div class="hero__slide-text-wrapper">
-                      <h2>Захватывающие вершины Кавказа</h2>
-                      <p>В сопровождении опытных гидов вы пройдёте <br> через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
-                    </div>
-                    <a class="hero__slide-content-button btn" href="#">Смотреть тур</a>
-                  </div>
-                  <div class="hero__slide-media-wrapper">
-                    <div class="hero__slide-video-wrapper">
-                      <div class="hero__slide-video-poster" data-caucasus-video-poster>
-                        <picture>
-                          <source type="image/webp"
-                            srcset="./img/caucasus-video-poster.webp 1x, ./img/caucasus-video-poster@2x.webp 2x">
-                          <img src="./img/caucasus-video-poster.jpg" srcset="./img/caucasus-video-poster@2x.jpg 2x" width="482" height="317" alt="">
-                        </picture>
-                      </div>
-                      <button class="hero__slide-video-play-button" type="button" aria-label="Воспроизвести видео о путешествии на Кавказ." data-caucasus-video-play-button >
-                        <svg  width="14" height="26">
-                          <use href="./img/sprite.svg#icon-play-button-hover"></use>
-                        </svg>
-                      </button>
-                      <div class="hero__slide-video" data-caucasus-video>
-                        <!-- сюда будет добавлен iframe с видео -->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="hero__slide-details-wrapper">
-                    <ul class="hero__slide-details-list">
-                      <li class="hero__slide-details-item">
-                        <svg width="22" height="22">
-                          <use href="./img/sprite.svg#icon-moon"></use>
-                        </svg>
-                        <span>6 дней/5 ночей</span>
-                      </li>
-                      <li class="hero__slide-details-item">
-                        <svg width="22" height="22">
-                          <use href="./img/sprite.svg#icon-level"></use>
-                        </svg>
-                        <span>Высокая сложность</span>
-                      </li>
-                    </ul>
-                    <div class="hero__slide-bullets-wrapper swiper-pagination" data-hero-pagination>
-                      <!-- сюда будут добавлены буллеты для переключения слайдов -->
-                    </div>
-                  </div>
+      <section class="hero" >
+        <h2 class="visually-hidden">Рекламная информация о турах Lifetour.</h2>
+        <div class="hero__slider swiper" data-hero-slider>
+          <ol class="hero__slider-list swiper-wrapper">
+            <li class="hero__slider-item swiper-slide">
+              <div class="container hero__slide-container">
+                <div class="hero__slide-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/caucasus-desktop.webp 1x, ./img/caucasus-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)"
+                      srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1199px)"
+                      srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
+                    <img src="./img/caucasus-desktop.jpg" srcset="./img/caucasus-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                  </picture>
                 </div>
-              </li>
-              <li class="hero__slider-item swiper-slide">
-                <div class="container hero__slide-container">
-                  <div class="hero__slide-image-wrapper">
-                    <picture>
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
-                      <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
-                      <source type="image/webp"
-                        srcset="./img/kamchatka-desktop.webp 1x, ./img/kamchatka-desktop@2x.webp 2x">
-                      <source type="image/jpeg" media="(max-width: 767px)"
-                        srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)"
-                        srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
-                      <img src="./img/kamchatka-desktop.jpg" srcset="./img/kamchatka-desktop@2x.jpg 2x" width="1440" height="800" alt="">
-                    </picture>
+                <div class="hero__slide-content-wrapper">
+                  <div class="hero__slide-text-wrapper">
+                    <h3>Захватывающие вершины Кавказа</h3>
+                    <p>В сопровождении опытных гидов вы пройдёте <br> через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
                   </div>
-                  <div class="hero__slide-content-wrapper">
-                    <div class="hero__slide-text-wrapper">
-                      <h2>Невероятная природа Камчатки</h2>
-                      <p>Незабываемое приключение, во время которого <br> вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
-                    </div>
-                    <a class="hero__slide-content-button btn" href="#">Смотреть тур</a>
-                  </div>
-                  <div class="hero__slide-media-wrapper">
-                    <div class="hero__slide-media-image-wrapper">
+                  <a class="hero__slide-content-button btn" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero__slide-media-wrapper">
+                  <div class="hero__slide-video-wrapper">
+                    <div class="hero__slide-video-poster" data-caucasus-video-poster>
                       <picture>
-                        <source type="image/webp" media="(max-width: 1199px)"
-                          srcset="./img/kamchatka-photo-tablet.webp 1x, ./img/kamchatka-photo-tablet@2x.webp 2x">
                         <source type="image/webp"
-                          srcset="./img/kamchatka-photo-desktop.webp 1x, ./img/kamchatka-photo-desktop@2x.webp 2x">
-                        <source type="image/png" media="(max-width: 1199px)"
-                          srcset="./img/kamchatka-photo-tablet.png 1x, ./img/kamchatka-photo-tablet@2x.png 2x">
-                        <img src="./img/kamchatka-photo-desktop.png" srcset="./img/kamchatka-photo-desktop@2x.png 2x" width="410" height="459" alt="">
+                          srcset="./img/caucasus-video-poster.webp 1x, ./img/caucasus-video-poster@2x.webp 2x">
+                        <img src="./img/caucasus-video-poster.jpg" srcset="./img/caucasus-video-poster@2x.jpg 2x" width="482" height="317" alt="">
                       </picture>
                     </div>
-                  </div>
-                  <div class="hero__slide-details-wrapper">
-                    <ul class="hero__slide-details-list">
-                      <li class="hero__slide-details-item">
-                        <svg width="22" height="22">
-                          <use href="./img/sprite.svg#icon-moon"></use>
-                        </svg>
-                        <span>9 дней/10 ночей</span>
-                      </li>
-                      <li class="hero__slide-details-item">
-                        <svg width="22" height="22">
-                          <use href="./img/sprite.svg#icon-level"></use>
-                        </svg>
-                        <span>Средняя сложность</span>
-                      </li>
-                    </ul>
-                    <div class="hero__slide-bullets-wrapper swiper-pagination" data-hero-pagination>
-                      <!-- сюда будут добавлены буллеты для переключения слайдов -->
+                    <button class="hero__slide-video-play-button" type="button" aria-label="Воспроизвести видео о путешествии на Кавказ." data-caucasus-video-play-button >
+                      <svg  width="14" height="26">
+                        <use href="./img/sprite.svg#icon-play-button-hover"></use>
+                      </svg>
+                    </button>
+                    <div class="hero__slide-video" data-caucasus-video>
+                      <!-- сюда будет добавлен iframe с видео -->
                     </div>
                   </div>
                 </div>
-              </li>
-              <li class="hero__slider-item swiper-slide">
-                <div class="container hero__slide-container">
-                  <div class="hero__slide-image-wrapper">
+                <div class="hero__slide-details-wrapper">
+                  <ul class="hero__slide-details-list">
+                    <li class="hero__slide-details-item">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>
+                      <span>6 дней/5 ночей</span>
+                    </li>
+                    <li class="hero__slide-details-item">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-level"></use>
+                      </svg>
+                      <span>Высокая сложность</span>
+                    </li>
+                  </ul>
+                  <div class="hero__slide-bullets-wrapper swiper-pagination" data-hero-pagination>
+                    <!-- сюда будут добавлены буллеты для переключения слайдов -->
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="hero__slider-item swiper-slide">
+              <div class="container hero__slide-container">
+                <div class="hero__slide-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/kamchatka-desktop.webp 1x, ./img/kamchatka-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)"
+                      srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1199px)"
+                      srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
+                    <img src="./img/kamchatka-desktop.jpg" srcset="./img/kamchatka-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                  </picture>
+                </div>
+                <div class="hero__slide-content-wrapper">
+                  <div class="hero__slide-text-wrapper">
+                    <h3>Невероятная природа Камчатки</h3>
+                    <p>Незабываемое приключение, во время которого <br> вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
+                  </div>
+                  <a class="hero__slide-content-button btn" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero__slide-media-wrapper">
+                  <div class="hero__slide-media-image-wrapper">
                     <picture>
-                      <source type="image/webp" media="(max-width: 767px)"
-                        srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
                       <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
+                        srcset="./img/kamchatka-photo-tablet.webp 1x, ./img/kamchatka-photo-tablet@2x.webp 2x">
                       <source type="image/webp"
-                        srcset="./img/altai-desktop.webp 1x, ./img/altai-desktop@2x.webp 2x">
-                      <source type="image/jpeg" media="(max-width: 767px)"
-                        srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
-                      <source type="image/jpeg" media="(max-width: 1199px)"
-                        srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
-                      <img src="./img/altai-desktop.jpg" srcset="./img/altai-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                        srcset="./img/kamchatka-photo-desktop.webp 1x, ./img/kamchatka-photo-desktop@2x.webp 2x">
+                      <source type="image/png" media="(max-width: 1199px)"
+                        srcset="./img/kamchatka-photo-tablet.png 1x, ./img/kamchatka-photo-tablet@2x.png 2x">
+                      <img src="./img/kamchatka-photo-desktop.png" srcset="./img/kamchatka-photo-desktop@2x.png 2x" width="410" height="459" alt="">
                     </picture>
                   </div>
-                  <div class="hero__slide-content-wrapper">
-                    <div class="hero__slide-text-wrapper">
-                      <h2>Магические пейзажи Алтайского Края</h2>
-                      <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических <br> и захватывающих дух ландшафтов Алтайских гор.</p>
-                    </div>
-                    <a class="hero__slide-content-button btn" href="#">Смотреть тур</a>
-                  </div>
-                  <div class="hero__slide-media-wrapper">
-                    <div class="hero__slide-media-audio-wrapper">
-                      <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
-                    </div>
-                  </div>
-                  <div class="hero__slide-details-wrapper">
-                    <ul class="hero__slide-details-list">
-                      <li class="hero__slide-details-item">
-                        <svg width="22" height="22">
-                          <use href="./img/sprite.svg#icon-moon"></use>
-                        </svg>
-                        <span>8 дней/7 ночей</span>
-                      </li>
-                      <li class="hero__slide-details-item">
-                        <svg width="22" height="22">
-                          <use href="./img/sprite.svg#icon-level"></use>
-                        </svg>
-                        <span>Лёгкая сложность</span>
-                      </li>
-                    </ul>
-                    <div class="hero__slide-bullets-wrapper swiper-pagination" data-hero-pagination>
-                      <!-- сюда будут добавлены буллеты для переключения слайдов -->
-                    </div>
+                </div>
+                <div class="hero__slide-details-wrapper">
+                  <ul class="hero__slide-details-list">
+                    <li class="hero__slide-details-item">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>
+                      <span>9 дней/10 ночей</span>
+                    </li>
+                    <li class="hero__slide-details-item">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-level"></use>
+                      </svg>
+                      <span>Средняя сложность</span>
+                    </li>
+                  </ul>
+                  <div class="hero__slide-bullets-wrapper swiper-pagination" data-hero-pagination>
+                    <!-- сюда будут добавлены буллеты для переключения слайдов -->
                   </div>
                 </div>
-              </li>
-            </ol>
-          </div>
-        </section>
+              </div>
+            </li>
+            <li class="hero__slider-item swiper-slide">
+              <div class="container hero__slide-container">
+                <div class="hero__slide-image-wrapper">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/caucasus-mobile.webp 1x, ./img/caucasus-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/caucasus-tablet.webp 1x, ./img/caucasus-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="./img/altai-desktop.webp 1x, ./img/altai-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)"
+                      srcset="./img/caucasus-mobile.jpg 1x, ./img/caucasus-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1199px)"
+                      srcset="./img/caucasus-tablet.jpg 1x, ./img/caucasus-tablet@2x.jpg 2x">
+                    <img src="./img/altai-desktop.jpg" srcset="./img/altai-desktop@2x.jpg 2x" width="1440" height="800" alt="">
+                  </picture>
+                </div>
+                <div class="hero__slide-content-wrapper">
+                  <div class="hero__slide-text-wrapper">
+                    <h3>Магические пейзажи Алтайского Края</h3>
+                    <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических <br> и захватывающих дух ландшафтов Алтайских гор.</p>
+                  </div>
+                  <a class="hero__slide-content-button btn" href="#">Смотреть тур</a>
+                </div>
+                <div class="hero__slide-media-wrapper">
+                  <div class="hero__slide-media-audio-wrapper">
+                    <iframe title="Слушать аудио про конец фронтенда, одинаковые фреймворки и логические свойства." loading="lazy" width="340" height="220" src="https://music.yandex.ru/iframe/track/112912322/25474374"></iframe>
+                  </div>
+                </div>
+                <div class="hero__slide-details-wrapper">
+                  <ul class="hero__slide-details-list">
+                    <li class="hero__slide-details-item">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-moon"></use>
+                      </svg>
+                      <span>8 дней/7 ночей</span>
+                    </li>
+                    <li class="hero__slide-details-item">
+                      <svg width="22" height="22">
+                        <use href="./img/sprite.svg#icon-level"></use>
+                      </svg>
+                      <span>Лёгкая сложность</span>
+                    </li>
+                  </ul>
+                  <div class="hero__slide-bullets-wrapper swiper-pagination" data-hero-pagination>
+                    <!-- сюда будут добавлены буллеты для переключения слайдов -->
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <main>
         <section class="tours" id="tours" data-test="tours">
           <div class="container tours__container">
             <h2 class="tours__title">Ближайшие туры</h2>
@@ -486,7 +487,7 @@
             </div>
           </div>
         </section>
-        <section class="training" data-test="training">
+        <section class="training" id="training" data-test="training">
           <div class="container training__container">
             <h2 class="training__title">Обучение</h2>
             <div class="training__text-content-wrapper">
@@ -644,7 +645,7 @@
             </div>
           </div>
         </section>
-        <section class="about" data-test="about">
+        <section class="about" id="about" data-test="about">
           <div class="container about__container">
             <h2 class="about__title">О нас</h2>
             <div class="about__image-wrapper">
@@ -674,7 +675,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews" data-test="reviews">
+        <section class="reviews" id="reviews" data-test="reviews">
           <div class="container reviews__container">
             <h2 class="reviews__title">Отзывы</h2>
             <div class="reviews__slider swiper" data-reviews-slider>
@@ -899,7 +900,7 @@
             </div>
           </div>
         </section>
-        <section class="gallery" data-test="gallery">
+        <section class="gallery" id="gallery" data-test="gallery">
           <div class="container gallery__container">
             <h2 class="gallery__title">Фотогалерея</h2>
             <div class="gallery__text-content-wrapper">
@@ -1018,7 +1019,7 @@
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="feedback__input-wrapper custom-input" Data-validate-type="phone" data-message-base="Поле обязательно" data-message-extra="Поле некорректно" data-required>
                   <label for="phone">Введите телефон.</label>
-                  <input type="phone" name="phone" id="phone" placeholder="Телефон" required >
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required >
                 </div>
                 <div class="feedback__input-wrapper custom-input" data-validate-type="email" data-message-base="Поле обязательно" data-message-extra="Поле некорректно"  data-required>
                   <label for="email">Введите адрес электронной почты.</label>
@@ -1046,17 +1047,18 @@
         </section>
       </main>
       <footer class="footer" data-test="footer">
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container contacts__container">
             <h2 class="contacts__title">Контакты</h2>
             <div class="contacts__text-content-wrapper">
-              <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
+              <p>Свяжитесь с нами любым удобным для&nbsp;вас&nbsp;способом или приходите к&nbsp;нам&nbsp;в&nbsp;гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
             </div>
             <div class="contacts__info-wrapper">
               <div class="contacts__item-wrapper">
                 <h3 class="contacts__item-title">Телефон</h3>
                 <address class="contacts__description">
-                  <a class="contacts__link" href="tel:+79837454545">+7 983 745-45-45</a>
+                  <!-- Для отключения установи класс contacts__link--disabled -->
+                  <a class="contacts__link " href="tel:+79837454545">+7 983 745-45-45</a>
                 </address>
                 <div class="contacts__icon-wrapper">
                   <svg width="26" height="26">
@@ -1077,7 +1079,7 @@
               </div>
               <div class="contacts__item-wrapper">
                 <h3 class="contacts__item-title">Адрес</h3>
-                <address class="contacts__description">г. Москва, пр-т Мира, д. 14, офис 101</address>
+                <address class="contacts__description">г. Москва, пр-т Мира, <br> д. 14, офис 101</address>
                 <div class="contacts__icon-wrapper">
                   <svg width="26" height="26">
                     <use href="./img/sprite.svg#icon-pin-stroke"></use>
@@ -1086,136 +1088,91 @@
               </div>
             </div>
             <div class="contacts__map-wrapper">
-              <picture>
-                <source type="image/webp" media="(max-width: 767px)"
-                  srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
-                  <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
-                  <source type="image/webp"
-                  srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
-                  <source type="image/jpeg" media="(max-width: 767px)"
-                  srcset="./img/map-mobile.jpg 1x, ./img/map-mobile@2x.jpg 2x">
-                  <source type="image/jpeg" media="(max-width: 1199px)"
-                  srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
-                  <img src="./img/map-desktop.jpg" srcset="./img/map-desktop@2x.jpg 2x" width="585" height="324" alt="Карта офиса туристической компании Lifetour по адресу город Москва, проспект Мира, дом 14, офис 101.">
-              </picture>
+              <div class="contacts__map-image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
+                    <source type="image/webp"
+                    srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
+                    <source type="image/jpeg" media="(max-width: 767px)"
+                    srcset="./img/map-mobile.jpg 1x, ./img/map-mobile@2x.jpg 2x">
+                    <source type="image/jpeg" media="(max-width: 1199px)"
+                    srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+                    <img src="./img/map-desktop.jpg" srcset="./img/map-desktop@2x.jpg 2x" width="585" height="324" alt="Карта офиса туристической компании Lifetour по адресу город Москва, проспект Мира, дом 14, офис 101.">
+                </picture>
+              </div>
             </div>
           </div>
         </section>
-        <section class="footer-navigation">
-          <div class="container footer-navigation__container">
-            <div class="footer-navigation__site-wrapper">
-              <a class="footer-navigation__logo-link" href="#">
-                <svg width="142" height="42">
-                  <use href="./img/sprite.svg#icon-logo"></use>
-                </svg>
-                <span class="visually-hidden">Логотип туристической компании Lifetour.</span>
-              </a>
-              <ul class="footer-navigation__site-list">
-                <li class="footer-navigation__site-item">
-                  <a class="footer-navigation__site-link" href="">Туры</a>
-                </li>
-                <li class="footer-navigation__site-item">
-                  <a class="footer-navigation__site-link" href="">Обучение</a>
-                </li>
-                <li class="footer-navigation__site-item">
-                  <a class="footer-navigation__site-link" href="">О нас</a>
-                </li>
-                <li class="footer-navigation__site-item">
-                  <a class="footer-navigation__site-link" href="">Отзывы</a>
-                </li>
-                <li class="footer-navigation__site-item">
-                  <a class="footer-navigation__site-link" href="">Фотографии</a>
-                </li>
-                <li class="footer-navigation__site-item">
-                  <a class="footer-navigation__site-link" href="">Контакты</a>
-                </li>
-              </ul>
-              <address class="footer-navigation__phone">
-                <!-- Для отключения установи класс footer-navigation__phone-disabled -->
-               <a class="footer-navigation__phone-link" href="tel:+78007253232">8 800 725-32-32</a>
-                         </address>
-            </div>
-            <div class="footer-navigation__social-wrapper">
-              <ul class="footer-navigation__social-list">
-                <li class="footer-navigation__social-item">
-                  <a class="footer-navigation__social-link" href="#" aria-label="Lifetour в Вконтакте.">
-                    <svg width="16" height="9" fill="none">
-                      <use href="./img/sprite.svg#icon-vk">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-navigation__social-item">
-                  <a class="footer-navigation__social-link " href="#" aria-label="Lifetour в Одноклассниках.">
-                    <svg width="9" height="16" fill="none">
-                      <use href="./img/sprite.svg#icon-odnoklassniki">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="footer-navigation__social-item">
-                  <a class="footer-navigation__social-link" href="#" aria-label="Lifetour в Reddit.">
-                    <svg width="14" height="15" fill="none">
-                      <use href="./img/sprite.svg#icon-reddit">
-                      </use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <p class="footer-navigation__privacy-policy">Политика конфиденциальности</p>
+        <div class="container footer__navigation-container">
+          <div class="footer__navigation-site-wrapper">
+            <a class="footer__navigation-logo-link">
+              <svg width="142" height="42">
+                <use href="./img/sprite.svg#icon-logo"></use>
+              </svg>
+              <span class="visually-hidden">Логотип туристической компании Lifetour.</span>
+            </a>
+            <ul class="footer__navigation-site-list">
+              <!-- Для отключения установи класс footer__navigation-site-link--disabled -->
+              <li class="footer__navigation-site-item">
+                <a class="footer__navigation-site-link" href="#tours">Туры</a>
+              </li>
+              <li class="footer__navigation-site-item">
+                <a class="footer__navigation-site-link" href="#training">Обучение</a>
+              </li>
+              <li class="footer__navigation-site-item">
+                <a class="footer__navigation-site-link" href="#about">О нас</a>
+              </li>
+              <li class="footer__navigation-site-item">
+                <a class="footer__navigation-site-link " href="#reviews">Отзывы</a>
+              </li>
+              <li class="footer__navigation-site-item">
+                <a class="footer__navigation-site-link" href="#gallery">Фотографии</a>
+              </li>
+              <li class="footer__navigation-site-item">
+                <a class="footer__navigation-site-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <address class="footer__phone">
+              <!-- Для отключения установи класс footer__phone-link--disabled -->
+              <a class="footer__phone-link " href="tel:+78007253232">8 800 725-32-32</a>
+            </address>
           </div>
-        </section>
+          <div class="footer__social-wrapper">
+            <ul class="footer__social-list">
+              <!-- Для отключения установи класс footer__social-link--disabled -->
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="Lifetour в Вконтакте.">
+                  <svg width="16" height="9" fill="none">
+                    <use href="./img/sprite.svg#icon-vk">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link " href="#" aria-label="Lifetour в Одноклассниках.">
+                  <svg width="9" height="16" fill="none">
+                    <use href="./img/sprite.svg#icon-odnoklassniki">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" aria-label="Lifetour в Reddit.">
+                  <svg width="14" height="15" fill="none">
+                    <use href="./img/sprite.svg#icon-reddit">
+                    </use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer__privacy-policy">Политика конфиденциальности</p>
+        </div>
       </footer>
     </div>
-
-
-    <!-- <div class="workout__form-wrapper" data-form-validate data-callback="base" data-parent-validate="base" data-message-base="Заполните все данные" data-message-extra="Неверный ввод данных">
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <div class="workout__input-wrapper custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно" data-message-extra="Поле некорректно" data-required>
-          <label for="name">Имя</label>
-          <input type="text" name="name" id="name" placeholder="Имя" required >
-        </div>
-        <div class="workout__input-wrapper custom-input" data-validate-type="phone" data-message-base="Поле обязательно" data-message-extra="Поле некорректно"  data-required>
-          <label for="phone">Телефон</label>
-          <input type="tel" name="phone" id="phone" placeholder="Телефон" required >
-        </div>
-        <div class="workout__button-wrapper">
-          <button type="submit">Отправить</button>
-        </div>
-      </form>
-    </div> -->
-
-    <!-- Модалки
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

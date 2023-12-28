@@ -118,6 +118,7 @@
 }
 
 .training__subtitle {
+  max-width: 1100px;
   margin: 0;
   margin-bottom: -3px;
 
@@ -127,11 +128,15 @@
 
   &--small {
     @include vp-1199 {
+      max-width: 580px;
+
       font-size: 18px;
       line-height: 18px;
     }
 
     @include vp-767 {
+      max-width: 230px;
+
       font-size: 16px;
       line-height: 16px;
     }

@@ -20,13 +20,20 @@
 .tours__title {
   position: relative;
 
+  max-width: 1100px;
   margin: 0;
 
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
 
+  @include vp-1199 {
+    max-width: 580px;
+  }
+
   @include vp-767 {
+    max-width: 230px;
+
     font-size: 22px;
     line-height: 22px;
   }
@@ -60,6 +67,7 @@
   margin: 0;
   margin-top: 50px;
   margin-bottom: 55px;
+  align-items: stretch;
 
   list-style: none;
 

@@ -71,7 +71,7 @@
   }
 }
 
-.hero__slide-text-wrapper h2 {
+.hero__slide-text-wrapper h3 {
   margin: 0;
   margin-bottom: 25px;
 
@@ -135,11 +135,17 @@
 
 .hero__slide-content-button {
   min-width: 180px;
+  max-width: 420px;
   margin-bottom: 35px;
 
   @include vp-1199 {
     align-self: center;
+    max-width: 440px;
     margin-bottom: 45px;
+  }
+
+  @include vp-767 {
+    max-width: 270px;
   }
 }
 
@@ -300,6 +306,7 @@
 .hero__slide-details-item {
   display: flex;
   align-items: center;
+  max-width: 225px;
   column-gap: 8px;
   padding: 14px 20px;
 
