@@ -31,17 +31,17 @@ const closeMenu = () => {
   }
 };
 
-const setNavigationButtonsListener = () => {
+function setNavigationButtonsListener() {
   menuButtons.forEach((button) => {
     button.addEventListener('click', closeMenu);
   });
-};
+}
 
-const removeNavigationButtonsListener = () => {
+function removeNavigationButtonsListener() {
   menuButtons.forEach((button) => {
     button.removeEventListener('click', closeMenu);
   });
-};
+}
 
 const onNavigationToggleClick = () => {
   if (headerElement) {

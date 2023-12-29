@@ -150,12 +150,12 @@
   width: 16px;
   height: 16px;
 
-  background-image: url('../img/svg/icon-star.svg');
+  background-image: url("../img/svg/icon-star.svg");
   background-position: center;
   background-repeat: no-repeat;
 
   &--active {
-    background-image: url('../img/svg/icon-star-active.svg');
+    background-image: url("../img/svg/icon-star-active.svg");
   }
 
   &:not(:last-child) {

@@ -32,7 +32,7 @@
 }
 
 .header__navigation-wrapper {
-  display:  flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 32px 20px;
@@ -41,17 +41,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "toggle logo phone"
-    "nav nav nav";
+      "toggle logo phone"
+      "nav nav nav";
     padding: 20px 45px;
   }
 
   @include vp-767 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-    "toggle logo"
-    "toggle phone"
-    "nav nav";
+      "toggle logo"
+      "toggle phone"
+      "nav nav";
     padding: 15px;
   }
 }
@@ -108,14 +108,13 @@
   padding: 0;
 
   background-color: $color-default-white;
-  -webkit-mask-image: url("../img/svg/icon-menu-open.svg");
+  mask-image: url("../img/svg/icon-menu-open.svg");
   mask-image: url("../img/svg/icon-menu-open.svg");
   border: none;
 
   @include hover-focus {
     background-color: $color-resolution-blue;
     outline: none;
-
   }
 
   @include active {
@@ -129,7 +128,7 @@
   padding: 0;
 
   background-color: $color-elephant;
-  -webkit-mask-image: url("../img/svg/icon-menu-close.svg");
+  mask-image: url("../img/svg/icon-menu-close.svg");
   mask-image: url("../img/svg/icon-menu-close.svg");
   border: none;
 
@@ -280,6 +279,7 @@
     font-size: 16px;
     line-height: 16px;
   }
+
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
@@ -311,5 +311,5 @@
 }
 
 .header--navigation-opened .header__address-phone--disabled {
-  color:  $color-navy-blue;
+  color: $color-navy-blue;
 }

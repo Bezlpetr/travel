@@ -1,9 +1,9 @@
 .trainer {
   display: grid;
   grid-template-areas:
-  "img img"
-  "title vk"
-  "text text";
+    "img img"
+    "title vk"
+    "text text";
   grid-template-rows: repeat(3, max-content);
   align-items: start;
   row-gap: 15px;
@@ -83,7 +83,7 @@
   grid-area: text;
 }
 
-.trainer__text-content-wrapper  p {
+.trainer__text-content-wrapper p {
   margin: 0;
 
   font-size: 12px;
@@ -91,7 +91,7 @@
   line-height: 16px;
 }
 
-.trainer__text-content-wrapper  p:not(:last-child) {
+.trainer__text-content-wrapper p:not(:last-child) {
   margin: 5px;
 }
 

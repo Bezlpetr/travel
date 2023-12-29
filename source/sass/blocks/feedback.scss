@@ -168,25 +168,25 @@
   }
 
   &:not(:disabled) {
-    @include hover {
-      outline:  1px solid $color-navy-blue;
+    &:hover {
+      outline: 1px solid $color-navy-blue;
 
       &::placeholder {
         color: $color-navy-blue;
       }
     }
 
-    @include focus {
-      outline:  1px solid $color-resolution-blue;
+    &:focus {
+      outline: 1px solid $color-resolution-blue;
     }
 
-    @include active {
-      outline:  1px solid $color-resolution-blue;
+    &:active {
+      outline: 1px solid $color-resolution-blue;
     }
   }
 
   &:disabled {
-    outline:  1px solid $color-navy-blue-opacity10;
+    outline: 1px solid $color-navy-blue-opacity10;
     cursor: default;
 
     &::placeholder {

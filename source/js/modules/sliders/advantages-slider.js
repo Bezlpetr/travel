@@ -1,7 +1,7 @@
 import Swiper from '../../vendor/swiper';
 
 // сначала пишем необходимый брейкпоинт
-let desktop = window.matchMedia('(min-width: 1200px)');
+const desktop = window.matchMedia('(min-width: 1200px)');
 
 const initAdvantagesSlider = () => {
   let swiperAdvantages;

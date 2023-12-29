@@ -13,9 +13,9 @@
   grid-template-columns: 1fr;
   column-gap: 30px;
   grid-template-areas:
-  "title title"
-  "text map"
-  "info map";
+    "title    title"
+    "text    map"
+    "info    map";
 
   @include vp-1199 {
     display: flex;
@@ -134,8 +134,8 @@
 .contacts__item-wrapper {
   display: grid;
   grid-template-areas:
-  "icon title"
-  "icon description";
+    "icon    title"
+    "icon    description";
   row-gap: 8px;
   column-gap: 30px;
 

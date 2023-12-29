@@ -89,8 +89,8 @@
   }
 
   @include vp-767 {
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 
     width: 350px;
     height: 400px;
@@ -156,7 +156,7 @@
   }
 }
 
-.about__section-wrapper p{
+.about__section-wrapper p {
   margin: 0;
 
   font-size: 14px;
